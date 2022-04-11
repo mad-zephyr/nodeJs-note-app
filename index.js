@@ -20,6 +20,7 @@ app.get('/', async (req, res) => {
 	})
 })
 
+
 app.get('/:id', async (req, res) => {
 	res.json({ note: await getNoteById(req.params.id)})
 })
